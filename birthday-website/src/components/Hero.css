@@ -3,13 +3,73 @@
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
 }
 
 .hero-image {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.animated-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
+  width: 40%;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: black;
+  font-size: 35px;
+  border-radius: 10px;
+  white-space: pre-line;
+  font-family: 'Courier New', Courier, monospace; /* Typewriter-esque font */
+}
+
+
+.animated-text p {
+  margin: 10px 0;
+}
+
+.animated-text strong {
+  font-weight: bold;
+}
+
+.final-message {
+  font-size: 24px;
+  font-family: 'Courier New', Courier, monospace;
+  animation: fadeIn 2s ease-in-out;
+  animation-delay: 3s;
+  margin-top: 20px;
+}
+
+@keyframes typeWriter {
+  from {
+    width: 0;
+  }
+}
+
+.cursor {
+  display: inline-block;
+  width: 10px;
+  height: 40px;
+  background-color: white;
+  animation: blink 0.8s step-end infinite;
+}
+
+@keyframes blink {
+  from, to {
+    background-color: transparent;
+  }
+  50% {
+    background-color: white;
+  }
 }
