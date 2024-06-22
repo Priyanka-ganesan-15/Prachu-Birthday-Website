@@ -1,0 +1,27 @@
+/* Cake.css */
+
+/* Cake.css */
+
+.Cake {
+    height: 100vh; /* Full viewport height */
+    scroll-snap-align: start; /* Snap to the start of Cake section */
+    background-color: lightblue; /* Example background color */
+  }
+  
+.birthday-Cake {
+    height: calc(100vh - 20px); /* Full viewport height minus 20px for gap */
+    display: flex; /* Center content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-direction: column; /* Arrange elements in a column */
+    background-color: lightblue; /* Background color for the section */
+    margin-top: 20px; /* Add space between Hero section and this section */
+  }
+  
+  .cake-image {
+    width: 100%; /* Image takes full width of container */
+    height: 100%; /* Image takes full height of container */
+    object-fit: cover; /* Ensure the image covers the container */
+    filter: grayscale(100%); /* Apply grayscale effect */
+  }
+  

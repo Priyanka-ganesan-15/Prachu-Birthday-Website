@@ -5,6 +5,8 @@ import './Hero.css'; // Ensure you have this CSS file in the same directory
 const Hero = () => {
   const [text, setText] = useState('');
 
+  
+
   useEffect(() => {
     const poem = "Close your eyes and \n make your wishes, \n\n I will make them come true \n in a thousand kisses!";
 

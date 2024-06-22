@@ -1,3 +1,11 @@
+/* Hero.css */
+
+.Hero {
+  height: 100vh; /* Full viewport height */
+  scroll-snap-align: start; /* Snap to the start of Hero section */
+  background-color: lightcoral; /* Example background color */
+}
+
 .hero-section {
   position: relative;
   width: 100vw;

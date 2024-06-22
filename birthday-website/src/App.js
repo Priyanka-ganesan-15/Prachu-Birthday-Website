@@ -1,13 +1,14 @@
 import React from 'react';
-import './App.css';
-import Hero from './components/Hero';
+import Hero from './components/Hero'; // Adjust the import path as necessary
+import BirthdaySection from './components/Cake'; // Adjust the import path as necessary
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
+    <div>
       <Hero />
+      <BirthdaySection />
     </div>
   );
-}
+};
 
 export default App;
