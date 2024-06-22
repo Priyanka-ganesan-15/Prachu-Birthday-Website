@@ -39,8 +39,9 @@
   margin: 10px 0;
 }
 
-.animated-text strong {
+.animated-text .highlight {
   font-weight: bold;
+  text-decoration: underline;
 }
 
 .final-message {

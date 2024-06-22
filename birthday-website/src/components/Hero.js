@@ -8,8 +8,6 @@ const Hero = () => {
   useEffect(() => {
     const poem = "Close your eyes and \n make your wishes, \n\n I will make them come true \n in a thousand kisses!";
 
-    //,\n\nI will make them come true \nin a thousand kisses!
-
     let currentIndex = 0;
     const poemTimer = setInterval(() => {
       if (currentIndex <= poem.length) {
@@ -31,6 +29,7 @@ const Hero = () => {
           setText(poem + "\n\n" + birthdayMessage.substring(0, index));
           index++;
         } else {
+          setText(poem + "\n\n" + `<span class='highlight'>${birthdayMessage}</span>`);
           clearInterval(birthdayTimer);
         }
       }, 100); // Adjust the interval for typing speed
@@ -46,7 +45,8 @@ const Hero = () => {
       <div className="hero-content">
         <img src={heroImage} alt="Hero" className="hero-image" />
         <div className="animated-text">
-          <p>{text}<span className="cursor"></span></p>
+          <p dangerouslySetInnerHTML={{ __html: text }}></p>
+          <span className="cursor"></span>
         </div>
       </div>
     </div>
