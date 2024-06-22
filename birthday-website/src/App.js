@@ -1,12 +1,16 @@
 import React from 'react';
-import Hero from './components/Hero'; // Adjust the import path as necessary
-import BirthdaySection from './components/Cake'; // Adjust the import path as necessary
+import Hero from './components/Hero';
+import BirthdaySection from './components/Cake';
+import Timeline from './components/Timeline';
+
 
 const App = () => {
   return (
-    <div>
+    <div className="app">
       <Hero />
+      <Timeline />
       <BirthdaySection />
+
     </div>
   );
 };
