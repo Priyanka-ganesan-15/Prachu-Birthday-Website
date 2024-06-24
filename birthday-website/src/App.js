@@ -10,7 +10,6 @@ const App = () => {
       <Hero />
       <Timeline />
       <BirthdaySection />
-
     </div>
   );
 };
